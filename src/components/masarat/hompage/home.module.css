@@ -1,0 +1,5 @@
+.homelayout{
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 2fr);
+    height: 100%;
+}
