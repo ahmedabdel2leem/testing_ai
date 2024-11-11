@@ -9,6 +9,7 @@ export default function Mainbutn({
   transiton,
   border,
   text,
+  disabled,
   onClick,
 }: {
   isloading?: any;
@@ -19,6 +20,7 @@ export default function Mainbutn({
   transiton?: string;
   border?: string;
   text?: string;
+  disabled?: any,
   onClick?: () => void;
 }) {
   console.log(pading);

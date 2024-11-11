@@ -220,7 +220,11 @@ const userResponse = {
 }
 
 
-
+// const response = await axios.post<any>("http://localhost:8000/chats/send_message/", JSON.parse(JSON.stringify(userResponse)), {
+//     headers: {
+//         Authorization: `Bearer ${token}`,
+//     },
+// });
 
 const getMainChat = createAsyncThunk("mainChat/getMainChat", async ({ token, content }: { token: string; content: any }, thunkAPI) => {
     const { rejectWithValue } = thunkAPI

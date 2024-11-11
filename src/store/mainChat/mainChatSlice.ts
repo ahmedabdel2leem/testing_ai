@@ -128,6 +128,7 @@ const mainChatSlice = createSlice({
             state.error = null;
             state.message = action.payload.message;
             state.content = action.payload.content;
+            state.options = action.payload.options;
             console.log(action.payload);
         });
         builder.addCase(getMainChat.rejected, (state, action: any) => {
